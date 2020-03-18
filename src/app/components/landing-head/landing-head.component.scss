@@ -89,6 +89,7 @@
 
     .navbar-nav {
       .nav-item {
+
         &.active > {
           .nav-link,
           .nav-link:hover{
@@ -120,7 +121,8 @@
       }
     }
 
-    .navbar-collapse {
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
       .navbar-nav {
         align-items: flex-end;
         background-color: var(--dark-blue);
