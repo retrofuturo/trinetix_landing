@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "scss/_fonts";
+@import "scss/_variables";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+html,
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'PT Serif', sans-serif;
+  color: #777;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a,
+button,
+input[type=submit] {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.inner-container {
+  max-width: 1230px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+@media (max-width: 980px) {
+  .inner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .inner-container {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}

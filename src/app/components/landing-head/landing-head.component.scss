@@ -1,0 +1,141 @@
+
+:host {
+  .header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    height: 70px;
+    width: 100%;
+    border-top: 4px solid var(--sky-blue);
+    border-bottom: 1px solid #00203c;
+
+    .header__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .header__logo {
+      display: flex;
+      align-items: center;
+      height: 66px;
+    }
+
+    .header__navbar-menu {
+      font-family: 'DecimaNovaProBold', sans-serif;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .header {
+      .header__inner {
+        align-items: flex-start;
+      }
+
+      .header__navbar-menu {
+        padding-top: 14px;
+      }
+    }
+  }
+
+  .summary {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+
+    .summary__inner {
+      padding-top: 49px;
+      padding-bottom: 58px;
+    }
+
+    .summary__text {
+      font-family: 'PT Serif', serif;
+      font-size: 49px;
+      line-height: 58px;
+      color: #fff;
+      max-width: 1000px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .summary {
+      .summary__text {
+        font-size: 40px;
+        line-height: 53px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      border-top: 2px solid var(--sky-blue);
+    }
+    .summary {
+      display: none;
+    }
+  }
+}
+::ng-deep {
+  .navbar.navbar-dark.navbar-header-custom {
+    box-shadow: none;
+    padding: 0;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: flex-end;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        &.active > {
+          .nav-link,
+          .nav-link:hover{
+            background-color: transparent;
+            color: var(--sky-blue);
+          }
+        }
+        .nav-link {
+          font-size: 14px;
+          text-transform: uppercase;
+          padding: 8px 0;
+          margin-left: 46px;
+
+          &.nav-link-btn-link {
+            padding: 8px 20px;
+            border: 1px solid;
+            border-color: #fff;
+            border-radius: 17px;
+
+            &:hover {
+              border-color: var(--sky-blue);
+            }
+          }
+
+          &:hover {
+            color: var(--sky-blue);
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        align-items: flex-end;
+        background-color: var(--dark-blue);
+        padding: 15px;
+
+        .nav-link {
+          margin-left: 0;
+
+          &.nav-link-btn-link {
+            padding: 8px 0;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+

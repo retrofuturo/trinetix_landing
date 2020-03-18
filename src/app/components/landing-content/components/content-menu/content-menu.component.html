@@ -1,0 +1,17 @@
+
+<nav class="content-menu">
+  <div class="inner-container overflow-x-auto">
+    <ul class="content-menu__list">
+      <li class="content-menu__item"
+          *ngFor="let contentLink of contentLinks">
+        <a class="content-menu__link"
+           [ngClass]="{'active': contentLink.active}"
+           [routerLink]="contentLink.link">
+          <span class="label">{{ contentLink.label }}</span>
+          <span class="label-mobile">{{ contentLink.labelMobile }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+

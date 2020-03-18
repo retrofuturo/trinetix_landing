@@ -1,0 +1,39 @@
+
+<main>
+  <app-content-menu></app-content-menu>
+  <section class="what-we-do">
+    <div class="what-we-do__inner inner-container">
+      <h1 class="what-we-do__title">
+        What We Do
+      </h1>
+      <p class="what-we-do__text">
+        We launch different types of platforms and operating systems using distinguishes of
+        every platform or operating system as advantage and a powerful tool.
+      </p>
+      <div class="arrow-element"></div>
+      <div class="arrow-element__hide"></div>
+    </div>
+  </section>
+  <section class="services section">
+    <div class="services-inner-container">
+      <div class="service"
+            *ngFor="let serviceInfo of serviceInfoData">
+        <app-service-block [serviceInfo]="serviceInfo">
+        </app-service-block>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us section">
+    <div class="inner-container contact-us__inner">
+      <p class="contact-us__text">
+        <span>We enjoy what we do. </span>
+        <span>Working with smart people at great projects. </span>
+        <span>Contact us if you want to work with us.</span>
+      </p>
+      <button class="contact-us__btn">
+        Contact Us
+      </button>
+    </div>
+  </section>
+</main>
+
