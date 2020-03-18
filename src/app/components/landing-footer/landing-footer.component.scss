@@ -94,6 +94,10 @@
         font-size: 16px;
         max-width: 500px;
 
+        .footer-nav__item:hover {
+          color: var(--sky-blue);
+        }
+
         .footer-nav__item + .footer-nav__item {
           padding-left: 27px;
         }
